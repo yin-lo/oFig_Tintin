@@ -1,0 +1,10 @@
+.app__footer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 5vh;
+	background-color: rgb(3, 54, 43);
+	color: white;
+	animation: up 1s ease-in-out forwards;
+}
+

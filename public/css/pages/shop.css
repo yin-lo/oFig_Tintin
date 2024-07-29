@@ -1,0 +1,158 @@
+
+/*-----------bandeau gris-------------*/
+
+.title {
+	background-color: var(--secondary-color);
+	color: var(--text-color-light);
+	font-size: 1.5rem;
+	font-weight: 400;
+	text-align: center;
+	width: 100%;
+	margin: 8vh auto;
+}
+
+/*-----------main avec chaque article ----------------*/
+
+.box {
+	max-width: 60rem;
+	margin: 2rem auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1rem;
+	position: relative;
+}
+.article {
+	padding: 0.5rem;
+	border: solid 1px var(--tertiary-color);
+	width: 18rem;
+}
+
+.article__figure {
+	overflow: hidden;
+	position: relative;
+	margin: 0;
+	width: 100%;
+}
+
+.article__img {
+	object-fit: cover;
+	width: 100%;
+	transition: all 0.3s ease-in-out;
+}
+
+.article__img:hover {
+	transform: scale(1.5);
+}
+
+.article__legend {
+	position: relative;
+	z-index: 2;
+	margin: 1rem 0 0 0;
+	text-transform: uppercase;
+	font-size: 0.7rem;
+	color: var(--tertiary-color);
+	border-bottom: solid 1px var(--tertiary-color);
+}
+
+.article__title {
+	font-size: 1.5rem;
+	margin: 1rem 0;
+}
+
+.article__button {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 1rem 1rem;
+	background-color: var(--primary-color-btn);
+	color: var(--text-color-light);
+	border: none;
+	transition: all 0.3s ease-in-out;
+}
+
+.article__button:hover {
+	background-color: var(--primary-color-btn-darker);
+	cursor: pointer;
+}
+
+.article__button-basket {
+	margin: 0;
+	font-weight: 100;
+	font-size: 0.9rem;
+}
+
+.article__button-price {
+	display: flex;
+	align-items: center;
+}
+.article__button-old {
+	margin: 0;
+	font-weight: 100;
+	text-decoration: line-through;
+	margin-right: 0.5rem;
+}
+
+.article__button-actuel {
+	margin: 0;
+	font-weight: 800;
+	font-size: 1.1rem;
+}
+
+.sold {
+	position: relative;
+}
+
+.sold::before {
+	width: 4rem;
+	height: 4rem;
+	background-color: var(--secondary-color);
+	color: var(--text-color-light);
+	border: solid 5px var(--tertiary-color);
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0.5rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	position: absolute;
+	z-index: 5;
+	top: 0;
+	right: 0;
+}
+.sold20::before {
+	content: '-20%';
+}
+.sold30::before {
+	content: '-30%';
+}
+/*-----------étiquette sur le coté-----------*/
+.ticket__sold {
+	background-color: var(--primary-color-btn);
+	width: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0.5rem;
+	border-radius: 0 10px 10px 0;
+	position: fixed;
+	top: 16rem;
+	left: 0;
+	transition: all 0.3s ease-in-out;
+}
+
+.ticket__sold:hover{
+	width: 3rem;
+	background-color: var(--primary-color-btn-darker);
+}
+
+
+.ticket__sold p{
+	color: var(--text-color-light);
+	text-transform: uppercase;
+	font-weight: 700;
+	writing-mode: vertical-rl;
+	text-orientation: upright;
+	margin: 0;
+}

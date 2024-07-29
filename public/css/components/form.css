@@ -1,0 +1,61 @@
+.form {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	box-shadow: 1px 1px 5px gray;
+	max-width: 500px;
+	min-width: 400px;
+}
+
+form input::placeholder {
+	font-style: italic;
+}
+
+form input:valid {
+	border: solid var(--valid-color);
+}
+
+form input:invalid {
+	border: solid var(--invalid-color);
+}
+
+form article {
+	margin-block: 10px;
+	width: 100%;
+}
+
+form input {
+	border: solid 1px black;
+	width: 100%;
+}
+
+.form__inputs :nth-child(3) label {
+	display: flex;
+	flex-direction: space-between;
+	width: 100%;
+}
+
+.form__inputs :nth-child(3) label small {
+	margin-right: 10px;
+}
+
+.form__inputs :nth-child(3) label input {
+	align-self: center;
+	padding: unset;
+	margin: unset;
+	width: fit-content;
+}
+
+.form__inputs :nth-child(4) label {
+	font-size: 13px;
+}
+
+form :nth-child(3) {
+	display: flex;
+	justify-content: space-between;
+}
+
+form :nth-child(3),
+form :nth-child(4) {
+	margin-block: 10px;
+}
