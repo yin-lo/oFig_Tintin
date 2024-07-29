@@ -1,0 +1,48 @@
+.app__spinner {
+    position: absolute;
+    background-color: black;
+    z-index: 20;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: outlay 4000ms ease-in-out forwards;
+
+}
+
+.app__spinner > div {
+    width: 200px;
+    height: 200px;
+    border-top: 3px solid rgb(255, 142, 142);
+    border-left: 3px solid rgb(4, 243, 227);
+    border-right: 3px solid rgb(189, 119, 255);
+    border-bottom: 3px solid rgb(0, 220, 139);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation: spinner 2000ms ease-in-out forwards;
+}
+
+.app__spinner > div > figure {
+    transform: scale(0.5);
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    
+ 
+}
+
+.app__spinner > p {
+    color: white;
+    opacity: 0;
+    animation: show 2000ms ease-in-out 3 forwards;
+}

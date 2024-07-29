@@ -1,11 +1,6 @@
-:root{
-	--primary-color:rgb(15, 90, 71);
-	--secondary-color: #666;
-	--tertiary-color: #ccc;
-	--primary-color-btn: #c80000;
-	--primary-color-btn-darker: #460101;
-	--text-color-light: white;
-	--text-color-dark: black;
-	--valid-color:rgb(100, 200, 100);
-	--invalid-color:rgb(170, 0, 0);
+:root {
+    --primary-color: rgb(0, 139, 69);
+    --secondary-color: #666;
+    --third-color: #ccc;
+
 }

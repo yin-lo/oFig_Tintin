@@ -1,10 +1,33 @@
-.app__footer{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 5vh;
-	background-color: rgb(3, 54, 43);
-	color: white;
-	animation: up 1s ease-in-out forwards;
+.app__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    animation: up 500ms ease-in-out forwards;
 }
 
+.app__footer.app__footer--animation-slow {
+    animation: up 500ms ease-in-out 4000ms forwards;
+}
+
+
+
+@media (0<= width <= 415px){
+    .app__footer  {
+        flex-direction: column;
+        height: unset;
+        opacity: 0;
+        animation: up 500ms ease-in-out forwards;
+    }
+
+    .app__footer p {
+        text-align: center;
+    }
+
+    .app__footer.app__footer--animation-slow {
+        animation: up 500ms ease-in-out 4000ms forwards;
+    }
+   
+}

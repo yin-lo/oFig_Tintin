@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Boris Rose" />
+    <meta name="description" content="Shop" />
+    <title>Shop | Shop Page</title>
+    <link rel="icon" type="image/pgn" href="../../public/assets/favicon.png" />
+    <link rel="stylesheet" href="../../public/css/base/variables.css" />
+    <link rel="stylesheet" href="../../public/css/base/base.css" />
+    <link rel="stylesheet" href="../../public/css/utils/keyframes.css" />
+    <link rel="stylesheet" href="../../public/css/utils/objects.css" />
+    <link rel="stylesheet" href="../../public/css/layout/spinner.css">
+    <link rel="stylesheet" href="../../public/css/layout/header.css" />
+    <link rel="stylesheet" href="../../public/css/pages/shop.css" />
+    <link rel="stylesheet" href="../../public/css/layout/footer.css" />
+    <script src="https://kit.fontawesome.com/3b3c8e71e5.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div aria-label="conteneur de la page d'attente" class="app__spinner">
+        <div aria-label="spinner extérieur">
+            <figure aria-label="spinneur intérieure">
+              <img src="../../public/assets/favicon.png" alt="logo de shop">
+            </figure>
+        </div>
+        <p> Chargement en cours ... </p>
+    </div>
+    <header class="app__header fixed-top app__header--animation-slow">
+        <section class="animation-slow">
+            <figure>
+                <img src="../../public/assets/favicon.png" alt="logo shop">
+            </figure>
+            <span> Shop </span>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="../landing.html"><i class="fa-solid fa-house"></i></a></li>
+            </ul>
+        </nav>
+      
+    </header>
+    <main class="shop__main page">
+      <header><h2>Figurines sur le thème de Tintin et Milou</h2></header>
+      <section>
+        <!-- FIGURINE 1 -->
+        <article>
+          <figure>
+            <img src="../../public/assets/images/tintin.jpg" alt="tintin" />
+            <p> Tintin </p>
+          </figure>
+          <section>
+            <h3>Tintin</h3>
+            <p>Petit figurine de Tintin</p>
+            <button>
+              <section>
+                <p>Ajouter au panier</p>
+              </section>
+              <section><em>70</em><span>50.00€</span></section>
+            </button>
+          </section>
+        </article>
+        <!-- FIGURINE 2 -->
+        <article>
+          <figure>
+            <img src="../../public/assets/images/tournesol.jpg" alt="tournesol" />
+            <p> Tournesol </p>
+          </figure>
+          <section>
+            <h3>Triffon Tournesol</h3>
+            <p>Petit figurine de Tournesol</p>
+            <button>
+              <section>
+                <p>Ajouter au panier</p>
+              </section>
+              <section><em>200</em><span>100.00€</span></section>
+            </button>
+          </section>
+        </article>
+        <!-- FIGURINE 3 -->
+        <article>
+          <figure>
+            <img src="../../public/assets/images/haddock.jpg" alt="haddock" />
+            <p> Haddock </p>
+          </figure>
+          <section>
+            <h3>Capitaine Haddock</h3>
+            <p>Petit figurine du Capitain Haddock</p>
+            <button>
+              <section>
+                <p>Ajouter au panier</p>
+              </section>
+              <section><em>20</em><span>10.00€</span></section>
+            </button>
+          </section>
+        </article>
+        <!-- FIGURINE 4 -->
+        <article>
+          <figure>
+            <img src="../../public/assets/images/dupont.jpg" alt="dupont" />
+            <p> Dupont et Dupont </p>
+          </figure>
+          <section>
+            <h3>Les Dupont</h3>
+            <p>Petit figurine des Dupont</p>
+            <button>
+              <section>
+                <p>Ajouter au panier</p>
+              </section>
+              <section><em>50</em><span>40.00€</span></section>
+            </button>
+          </section>
+        </article>
+      </section>
+    </main>
+    <footer class="app__footer fixed-bottom app__footer--animation-slow">
+        <p> Toutes les figurines sont sous copyright Pixabay</p>
+    </footer>
+  </body>
+</html>

@@ -1,23 +1,31 @@
-/*object oriented css*/
 
-.fixed-top{
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	/*équivaut à écrire width 100% */
-	z-index: 10;
+/*object oriented css */
+.page {
+    display: flex;
+    margin-top: 8vh;
 }
 
-.fixed-bottom{
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 10;
+.full-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -2;
 }
 
-.page{
-	margin-top: 8vh;
-	display: flex;
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index:10;
+
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
 }
