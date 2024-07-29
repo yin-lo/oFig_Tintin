@@ -9,17 +9,17 @@
       content="Page du Shop de l'Application Shop, figurines de Tinte et Milou"
     />
     <meta name="keywords" content="Shop, figurines, Tintin et Milou" />
-    <title>Shop | Login Page</title>
+    <title>Shop | Cart Page</title>
     <link rel="icon" type="image/png" href="../../public/assets/favicon.png" />
     <link rel="stylesheet" href="../../public/css/fonts/font.css" />
     <link rel="stylesheet" href="../../public/css/base/variables.css" />
     <link rel="stylesheet" href="../../public/css/base/reset.css" />
     <link rel="stylesheet" href="../../public/css/utils/objects.css" />
     <link rel="stylesheet" href="../../public/css/utils/keyframes.css" />
-    <link rel="stylesheet" href="../../public/css/components/form.css" />
+    <link rel="stylesheet" href="../../public/css/components/table.css" />
     <link rel="stylesheet" href="../../public/css/layout/header.css" />
     <!-- LA PAGE CHANGE !!!! donc plus de référence à landing.css -->
-    <link rel="stylesheet" href="../../public/css/pages/login.css" />
+    <link rel="stylesheet" href="../../public/css/pages/cart.css" />
     <link rel="stylesheet" href="../../public/css/layout/footer.css" />
     <!-- SCRIPT JS  FONTAWESOME-->
     <script
@@ -47,59 +47,63 @@
               <i class="fa-solid fa-shop"></i>
             </a>
           </li>
+          <li>
+            <a href="./delivery.html">
+              <i class="fa-solid fa-truck"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./login.html">
+              <i class="fa-solid fa-sign-in"></i>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main class="login__main page">
-      <form class="form">
-        <section class="form__inputs">
-          <article>
-            <label for="email"></label>
-            <input
-              id="email"
-              type="text"
-              pattern="[a-z0-9_.]{4,20}[@]{1}[a-z]{2,5}[.]{1}[a-z]{2,4}"
-              placeholder="Entrez votre email"
-              required
-              aria-required="true"
-            />
-          </article>
-
-          <article>
-            <label for="password"></label>
-            <input
-              id="password"
-              type="password"
-              pattern="[a-zA-Z0-9!?_\-.]{10,12}"
-              required
-              placeholder="Entrez votre mot de passe"
-              aria-required="true"
-            />
-          </article>
-
-          <article>
-            <label>
-              <small>maintenir ma session ouverte</small>
-              <input type="checkbox" checked  aria-checked="true"/>
-            </label>
-          </article>
-          <article>
-            <label for="role"> Vous êtes : </label>
-            <select id="role" >
-              <option value="admin"> Administrateur </option>
-              <option value="client"> Client </option>
-            </select>
-          </article>
-        </section>
-        
-        <section class="form__actions">
-          <button type="submit">Valider</button>
-          <button type="reset">Réinitialiser</button>
-        </section>
-        <section>
-          <small>Mot de passe oublié ?<a href="#">Cliquez ici</a></small>
-        </section>
-      </form>
+    <main class="cart__main page">
+      <section>
+        <table class="table" border="collapse">
+          <thead>
+            <th scope="col">Nom</th>
+            <th scope="col">Quantité</th>
+            <th scope="col">Prix</th>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <figure>
+                  <img
+                    src="../../public/assets/images/tintin.jpg"
+                    alt="tintin"
+                  />
+                </figure>
+                <span aria-label="nom de la figurine">Tintin </span>
+              </th>
+              <td>1</td>
+              <td>70€</td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <figure>
+                  <img
+                    src="../../public/assets/images/haddock.jpg"
+                    alt="haddock"
+                  />
+                </figure>
+                <span aria-label="nom de la figurine">Haddock</span>
+              </th>
+              <td>1</td>
+              <td>25€</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="2">Montant total</th>
+              <td>95€</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
     </main>
     <footer class="app__footer fixed-bottom">
       <p>Toutes les images sont sous &copy; Pixabay</p>

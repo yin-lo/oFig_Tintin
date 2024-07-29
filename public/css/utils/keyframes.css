@@ -1,66 +1,94 @@
 @keyframes down {
-	from {
-		opacity: 0;
-		transform: translateY(-100px);
-	}
+  /* en entrant */
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
 
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+  /* en sortant */
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
+
+@keyframes down-300 {
+  from {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
+
+  /* en sortant */
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 
 @keyframes up {
-	from {
-		opacity: 0;
-		transform: translateY(100px);
-	}
+  /* enter */
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  /*leave*/
 
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-@keyframes right {
-	from {
-		opacity: 0;
-		transform: translateX(50px);
-	}
+@keyframes left {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
 
-	to {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
-@keyframes shopShow {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
 
 @keyframes show {
-	from {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
 
-	to {
-		opacity: 0;
-		z-index: -5;
-	}
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes spin {
-	from {
-		transform: rotate(360deg);
-	}
+@keyframes vanish {
+  0% {
+    opacity: 1;
+  }
 
-	to {
-		transform: rotate(0deg);
-	}
+  100% {
+    opacity: 0;
+    z-index: -20;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(360deg);
+  }
+  /* 
+    25% {
+        
+    }
+
+    50% {
+
+    } */
+
+  100% {
+    transform: rotate(0deg);
+  }
 }

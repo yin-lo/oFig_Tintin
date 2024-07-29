@@ -1,210 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="author" content="E.Leport" />
-		<meta name="description" content="figurines et statuettes" />
-		<meta name="keywords" content="shop, figurine, tintin" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Boris Rose" />
+    <meta
+      name="description"
+      content="Page du Shop de l'Application Shop, figurines de Tinte et Milou"
+    />
+    <meta name="keywords" content="Shop, figurines, Tintin et Milou" />
+    <title>Shop | Shop Page</title>
+    <link rel="icon" type="image/png" href="../../public/assets/favicon.png" />
+    <link rel="stylesheet" href="../../public/css/fonts/font.css" />
+    <link rel="stylesheet" href="../../public/css/base/variables.css" />
+    <link rel="stylesheet" href="../../public/css/base/reset.css" />
+    <link rel="stylesheet" href="../../public/css/utils/objects.css" />
+    <link rel="stylesheet" href="../../public/css/utils/keyframes.css" />
+    <link rel="stylesheet" href="../../public/css/components/spinner.css" />
+    <link rel="stylesheet" href="../../public/css/layout/header.css" />
+    <!-- LA PAGE CHANGE !!!! donc plus de référence à landing.css -->
+    <link rel="stylesheet" href="../../public/css/pages/shop.css" />
+    <link rel="stylesheet" href="../../public/css/layout/footer.css" />
+    <!-- SCRIPT JS  FONTAWESOME-->
+    <script
+      src="https://kit.fontawesome.com/3b3c8e71e5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div aria-label="outlay du spinner" class="app__spinner">
+      <div class="outer__spinner">
+        <figure class="inner__spinner">
+          <img src="../../public/assets/favicon.png" />
+        </figure>
+      </div>
+      <p>Chargement en cours ...</p>
+    </div>
+    <header class="app__header fixed-top app__header--slow">
+      <section>
+        <figure>
+          <img src="../../public/assets/favicon.png" alt="logo de Shop" />
+        </figure>
+        <span aria-label="conteneur du titre de l'application"> Shop </span>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">
+              <i class="fa-solid fa-home"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./cart.html">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./delivery.html">
+              <i class="fa-solid fa-truck"></i>
+            </a>
+          </li>
+          <li>
+            <a href="./login.html">
+              <i class="fa-solid fa-sign-in"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="shop__main page">
+      <header>
+        <h1>Les figurines sur le thème de Tintin et Milou</h1>
+      </header>
+      <section>
+        <article>
+          <figure>
+            <img
+              src="../../public/assets/images/tintin.jpg"
+              alt="figurine de tintin"
+            />
+            <figcaption>
+              <span aria-label="Identité de la figurine">Tintin</span>
+            </figcaption>
+            <span aria-label="promo de la figurine">30%</span>
+          </figure>
+          <section>
+            <h2>Tintin</h2>
+            <p>Tintin durant son aventure les 7 boules de crystal</p>
+            <button>
+              <section><p>Ajouter au panier</p></section>
+              <section><span>100</span><span>70€</span></section>
+            </button>
+          </section>
+        </article>
+        <article>
+          <figure>
+            <img
+              src="../../public/assets/images/haddock.jpg"
+              alt="figurine de haddock"
+            />
+            <figcaption>
+              <span aria-label="Identité de la figurine">Haddock</span>
+            </figcaption>
+            <span aria-label="promo de la figurine">50%</span>
+          </figure>
+          <section>
+            <h2>Capitain Haddock</h2>
+            <p>Capitain Haddock durant son aventure ...</p>
+            <button>
+              <section><p>Ajouter au panier</p></section>
+              <section><span>50</span><span>25€</span></section>
+            </button>
+          </section>
+        </article>
+        <article>
+          <figure>
+            <img
+              src="../../public/assets/images/tournesol.jpg"
+              alt="figurine de tournesol"
+            />
+            <figcaption>
+              <span aria-label="Identité de la figurine">Tournesol</span>
+            </figcaption>
+          </figure>
+          <section>
+            <h2>Triffon Tournesol</h2>
+            <p>Triffon Tournesol durant l'aventure ...</p>
+            <button>
+              <section><p>Ajouter au panier</p></section>
+              <section><span>50</span><span>25€</span></section>
+            </button>
+          </section>
+        </article>
 
-		<title>Final Fantasy | figurines</title>
-		<link rel="icon" type="image/x-icon" href="../public/assets/favicon.png" />
-
-		<link rel="stylesheet" href="../../public/css/fonts/font.css" />
-		<link rel="stylesheet" href="../../public/css/base/variables.css" />
-		<link rel="stylesheet" href="../../public/css/base/base.css" />
-		<link rel="stylesheet" href="../../public/css/utils/objects.css" />
-		<link rel="stylesheet" href="../../public/css/utils/keyframes.css" />
-		<link rel="stylesheet" href="../../public/css/components/spinner.css" />
-		<link rel="stylesheet" href="../../public/css/layout/header.css" />
-		<link rel="stylesheet" href="../../public/css/pages/shop.css" />
-		<link rel="stylesheet" href="../../public/css/layout/footer.css" />
-
-		<script src="https://kit.fontawesome.com/3b3c8e71e5.js" crossorigin="anonymous"></script>
-	</head>
-	<body>
-		<div aria-label="outlay du spinner" class="app__spinner">
-			<div class="outer__spinner">
-				<figure class="inner__spinner">
-					<img src="../../public/assets/favicon.png" alt="" />
-				</figure>
-			</div>
-			<p>Chargement en cours ...</p>
-
-		</div>
-
-		<header class="app__header fixed-top">
-			<section>
-				<figure>
-					<img src="../../public/assets/favicon.png" alt="logo boutique" />
-				</figure>
-				<span aria-label="conteneur du titre de l'app"> Shop </span>
-			</section>
-
-			<nav>
-				<ul>
-					<li>
-						<a href="../index.html">
-							<i class="fa-solid fa-home"></i>
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-
-		<h1 class="title page">Figurines sur le thème <em>Final Fantasy</em></h1>
-		
-		<main class="box">
-				<article class="article">
-					<figure class="article__figure">
-						<img class="article__img" src="../../public/assets/images/aerith.png" alt="figurine femme vetements roses" />
-						<figcaption class="article__legend">Final Fantasy Crisis Core</figcaption>
-					</figure>
-					<h2 class="article__title">Aerith Gainsborough</h2>
-					<p class="article__text">Figurine de 7 pouces - livrée avec son packaging</p>
-					<button class="article__button">
-						<p class="article__button-basket">Ajouter au panier</p>
-						<div class="article__button-price">
-							<p class="article__button-old"></p>
-							<p class="article__button-actuel">74,90 €</p>
-						</div>
-					</button>
-				</article>
-	
-				<article class="article sold sold20">
-					<figure class="article__figure">
-						<img class="article__img" src="../../public/assets//images/cloud.png" alt="figurine homme en noir avec une énorme épée à la main droite" />
-						<figcaption class="article__legend">Final Fantasy VII</figcaption>
-					</figure>
-					<h2 class="article__title">Cloud Strife Remake</h2>
-					<p class="article__text">Figurine de 8 pouces - livrée avec son packaging</p>
-					<button class="article__button">
-						<p class="article__button-basket">Ajouter au panier</p>
-						<div class="article__button-price">
-							<p class="article__button-old">74,90€</p>
-							<p class="article__button-actuel">59 €</p>
-						</div>
-					</button>
-				</article>
-	
-				<article class="article">
-					<figure class="article__figure">
-						<img class="article__img" src="../../public/assets//images/cloud-ac.png" alt="figurine homme en noir avec une énorme épée porté à deux mains" />
-						<figcaption class="article__legend">Final Fantasy Advent Children</figcaption>
-					</figure>
-					<h2 class="article__title">Cloud Strife</h2>
-					<p class="article__text">Figurine de 7 pouces - livrée avec son packaging</p>
-					<button class="article__button">
-						<p class="article__button-basket">Ajouter au panier</p>
-						<div class="article__button-price">
-							<p class="article__button-old"></p>
-							<p class="article__button-actuel">98,90 €</p>
-						</div>
-					</button>
-				</article>
-	
-				<article class="article">
-					<figure class="article__figure">
-						<img class="article__img" src="../../public/assets//images/cloud-bike.png" alt="figurine homme en noir avec une énorme épée sur une moto noire" />
-						<figcaption class="article__legend">Final Fantasy VII</figcaption>
-					</figure>
-					<h2 class="article__title">Cloud Strife & Fenrir</h2>
-					<p class="article__text">Figurine de 7 pouces - livrée avec son packaging</p>
-					<button class="article__button">
-						<p class="article__button-basket">Ajouter au panier</p>
-						<div class="article__button-price">
-							<p class="article__button-old">98,90 €</p>
-							<p class="article__button-actuel">69 €</p>
-						</div>
-					</button>
-				</article>
-	
-				<article class="article sold sold30">
-					<figure class="article__figure">
-						<img class="article__img" src="../../public/assets//images/tifa.png" alt=" femmes portant un haut et une jupe avec des baskets" />
-						<figcaption class="article__legend">Final Fantasy Advent Children</figcaption>
-					</figure>
-					<h2 class="article__title">Tifa Lockhart</h2>
-					<p class="article__text">Figurine de 7 pouces - livrée avec son packaging</p>
-					<button class="article__button">
-						<p class="article__button-basket">Ajouter au panier</p>
-						<div class="article__button-price">
-							<p class="article__button-old">98,90 €</p>
-							<p class="article__button-actuel">69 €</p>
-						</div>
-					</button>
-				</article>
-	
-				<article class="article">
-					<figure class="article__figure">
-						<img class="article__img" src="../../public/assets//images/vincent.png" alt="homme avec une cape rouge" />
-						<figcaption class="article__legend">Final Fantasy VII</figcaption>
-					</figure>
-					<h2 class="article__title">Vincent Valentine</h2>
-					<p class="article__text">Figurine de 7 pouces - livrée avec son packaging</p>
-					<button class="article__button">
-						<p class="article__button-basket">Ajouter au panier</p>
-						<div class="article__button-price">
-							<p class="article__button-old"></p>
-							<p class="article__button-actuel">74,90 €</p>
-						</div>
-					</button>
-				</article>
-	
-				<article class="article">
-					<figure class="article__figure">
-						<img class="article__img" src="../../public/assets//images/barret.png" alt="Homme avec son bras droit robotisé" />
-						<figcaption class="article__legend">Final Fantasy VII/figcaption>
-					</figure>
-					<h2 class="article__title">Barret Wallace</h2>
-					<p class="article__text">Figurine de 8 pouces - livrée avec son packaging</p>
-					<button class="article__button">
-						<p class="article__button-basket">Ajouter au panier</p>
-						<div class="article__button-price">
-							<p class="article__button-old"></p>
-							<p class="article__button-actuel">74,90 €</p>
-						</div>
-					</button>
-				</article>
-	
-				<article class="article">
-					<figure class="article__figure">
-						<img class="article__img" src="../../public/assets//images/sephiroth.png" alt="homme casqué et en armure avec une fine et longue épée dans la main gauche" />
-						<figcaption class="article__legend">Final Fantasy VII</figcaption>
-					</figure>
-					<h2 class="article__title">Sephiroth</h2>
-					<p class="article__text">Figurine de 10 pouces - livrée avec son packaging</p>
-					<button class="article__button">
-						<p class="article__button-basket">Ajouter au panier</p>
-						<div class="article__button-price">
-							<p class="article__button-old"></p>
-							<p class="article__button-actuel">113,90 €</p>
-						</div>
-					</button>
-				</article>
-	
-				<article class="article">
-					<figure class="article__figure">
-						<img class="article__img" src="../../public/assets//images/nanaki.png" alt="grosse bête canidé avec la queue enflammée" />
-						<figcaption class="article__legend">Final Fantasy Advent Children</figcaption>
-					</figure>
-					<h2 class="article__title">Nanaki - Red XIII</h2>
-					<p class="article__text">Figurine de 5 pouces - livrée avec son packaging</p>
-					<button class="article__button">
-						<p class="article__button-basket">Ajouter au panier</p>
-						<div class="article__button-price">
-							<p class="article__button-old"></p>
-							<p class="article__button-actuel">98,90 €</p>
-						</div>
-					</button>
-				</article>
-
-				<aside class="ticket__sold">
-					<p>soldes</p>
-				</aside>
-		</main>
-		
-
-		<footer class="app__footer">Toutes les images sont sous copyright de &copy;Pixabay</footer>
-	</body>
+        <article>
+          <figure>
+            <img
+              src="../../public/assets/images/dupont.jpg"
+              alt="figurine des duponts"
+            />
+            <figcaption>
+              <span aria-label="Identité de la figurine">Dupont et Dupont</span>
+            </figcaption>
+          </figure>
+          <section>
+            <h2>Les Duponts</h2>
+            <p>Les Duponts durant l'aventure ...</p>
+            <button>
+              <section><p>Ajouter au panier</p></section>
+              <section><span>70</span><span>25€</span></section>
+            </button>
+          </section>
+        </article>
+      </section>
+    </main>
+    <footer class="app__footer fixed-bottom app__footer--slow">
+      <p>Toutes les images sont sous &copy; Pixabay</p>
+    </footer>
+  </body>
 </html>
